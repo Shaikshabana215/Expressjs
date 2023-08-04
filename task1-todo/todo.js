@@ -9,7 +9,7 @@ function add() {
   } else {
     
     var li = document.createElement("li");
-    li.innerHTML = input.value;
+    li.innerHTML = input.value.trim();
     list.appendChild(li);
 
     var span= document.createElement("span");
@@ -44,7 +44,7 @@ function saveData(){
         var toDo = list.children.item(i);
 
         var toDoInfo = {
-            "task": toDo.innerText,
+            "task": toDo.innerText.trim(),
             "completed": toDo.classList.contains("checked")
         };
 
@@ -77,9 +77,5 @@ function newToDoItem(task, completed){
     li.appendChild(span);
 }
     
-// function showData(){
-//     list.innerHTML = localStorage.getItem("data");
-// }
 
 loadList();
-// showData();

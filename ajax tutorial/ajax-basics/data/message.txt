@@ -1,0 +1,5 @@
+Hello I am from message text file
+
+Banana
+Manago
+Orange
