@@ -4,6 +4,8 @@
 // // //level type is any
 // // let level;
 
+// import { TupleType } from "typescript";
+
 // // level = 1;
 
 // // level = "a";
@@ -64,16 +66,52 @@ let employee: {
 employee.id = 0;
 
 //Type helps to Dont Repeat Yourself
-type User = {
-id: number,
-username: string,
-course: string,
-year: number
+// type User = {
+// id: number,
+// username: string,
+// course: string,
+// year: number
+// }
+
+// let createUser: User = {
+//     id : 100,
+//     username: 'Mosh',
+//     course: 'Fullstack Development',
+//     year: 2023
+// }
+
+//Union Types: Morethan 1type we can have a variable
+
+//Data Types
+
+let person : string = "Hello";
+let age: number = 5;
+let isUpperClass: boolean= false;
+let nothing: void = null;
+let no: null = null;
+let car: Object = {
+  name: 'Maruthi',
+  color: 'black',
+  price: 1-20000
 }
 
-let createUser: User = {
-    id : 100,
-    username: 'Mosh',
-    course: 'Fullstack Development',
-    year: 2023
-}
+let fruits: string[]= ['apple','orange','mango'];
+
+let mixed: [number,boolean,string] = [1,true,'myself'];
+
+console.log(`person is ${person}`)
+console.log(`age is ${age}`)
+
+console.log(`isUpperClass is ${isUpperClass}`)
+
+console.log(`nothing is ${nothing}`)
+
+console.log(`car is ${car}`)
+console.log(`no is ${no}`)
+console.log(`fruits is ${fruits}`)
+
+console.log(`mixed is ${mixed}`)
+
+
+
+

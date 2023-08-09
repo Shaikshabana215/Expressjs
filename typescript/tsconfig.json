@@ -11,7 +11,7 @@
         //Javascript files will be stored
         "outDir": "./dist",
         //Type checking
-        "strict": true,
+        // "strict": true,
         "noUnusedParameters": true,
         "noUnusedLocals": true,
 
